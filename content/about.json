@@ -1,0 +1,41 @@
+{
+  "heading": "Security Through Precision & Deep Systems Analysis",
+  "bioParagraphs": [
+    "I am a Cybersecurity Engineer and Security Researcher with a focused background in identifying complex vulnerabilities across Web Applications, Android Ecosystems, and Distributed Infrastructure. My work centers on proactive defense, empirical penetration testing, and secure-by-design architecture.",
+    "Rather than treating security as a compliance checkbox, I operate with an adversarial mindset to uncover hidden business logic flaws, memory safety issues, and broken access controls before attackers can exploit them. I frequently contribute to bug bounty platforms and security research communities."
+  ],
+  "focusAreas": [
+    {
+      "title": "Penetration Testing & Offensive Security",
+      "description": "Black-box and white-box assessments of web endpoints, APIs, and cloud microservices using methodology-driven exploit techniques."
+    },
+    {
+      "title": "Web & Mobile (Android) Security",
+      "description": "Deep-dive static and dynamic binary analysis, dynamic instrumentation via Frida, SSL pinning bypass, and IPC mechanism auditing."
+    },
+    {
+      "title": "Vulnerability Research & Exploitation",
+      "description": "Uncovering zero-days and high-impact vulnerabilities in open-source applications, protocols, and proprietary business logic."
+    },
+    {
+      "title": "Security Engineering & Threat Mitigation",
+      "description": "Collaborating with engineering teams to integrate SAST/DAST automation, build secure authentication flows, and harden CI/CD pipelines."
+    }
+  ],
+  "philosophy": "Effective security relies on deep system understanding, minimal attack surfaces, and empirical evidence over theoretical risk.",
+  "technologies": [
+    "Linux",
+    "Python",
+    "C",
+    "Burp Suite",
+    "Nmap",
+    "Wireshark",
+    "Ghidra",
+    "Frida",
+    "MobSF",
+    "Metasploit",
+    "Docker",
+    "Git",
+    "Active Directory"
+  ]
+}

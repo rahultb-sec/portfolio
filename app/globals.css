@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  body {
+    @apply bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text antialiased transition-colors duration-300 ease-out selection:bg-purple-200 dark:selection:bg-purple-900/60 selection:text-purple-900 dark:selection:text-purple-100;
+  }
+}
+
+.gpu-layer {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+/* Liquid smooth animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Syntax highlighting custom overrides */
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1rem;
+  background: #0d0d14 !important;
+  color: #e2e8f0 !important;
+  border-radius: 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  border: 1px solid #262638;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #c084fc !important; /* Muted lavender keyword */
+  font-weight: 600;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-attribute,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type {
+  color: #86efac !important; /* Soft green */
+}
+
+.hljs-[#comment],
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion,
+.hljs-meta {
+  color: #64748b !important;
+  font-style: italic;
+}
+
+.hljs-number,
+.hljs-regexp,
+.hljs-link {
+  color: #fde047 !important;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name {
+  color: #93c5fd !important;
+}

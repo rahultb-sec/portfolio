@@ -1,0 +1,61 @@
+[
+  {
+    "id": "exp-1",
+    "position": "Senior Security Consultant",
+    "organization": "Apex Cyber Labs",
+    "location": "Bengaluru, India",
+    "startDate": "2024-01",
+    "endDate": "Present",
+    "description": "Leading web application, Android ecosystem, and cloud security assessments for enterprise fintech and SaaS clients.",
+    "responsibilities": [
+      "Conducted 35+ penetration tests covering GraphQL endpoints, OAuth2 implementations, and AWS cloud environments.",
+      "Engineered automated Frida scripts for dynamic instrumentation to bypass Android SSL pinning and native root detection.",
+      "Delivered detailed executive risk reports and remediation guidance to client engineering leads, resolving 98% of critical findings within SLA."
+    ],
+    "technologies": ["Burp Suite Pro", "Frida", "Ghidra", "Python", "AWS", "Docker", "MobSF"],
+    "achievements": [
+      "Discovered critical Account Takeover (ATO) vulnerability in a major payment gateway, awarded $4,500 bounty.",
+      "Standardized mobile app sec guidelines adopted by 4 enterprise engineering teams."
+    ],
+    "externalLink": "https://apexcyberlabs.example"
+  },
+  {
+    "id": "exp-2",
+    "position": "Cybersecurity Analyst & Application Security Specialist",
+    "organization": "Vanguard Defense Systems",
+    "location": "Remote",
+    "startDate": "2022-06",
+    "endDate": "2023-12",
+    "description": "Performed vulnerability assessments, threat modeling, and source code reviews for mission-critical web services.",
+    "responsibilities": [
+      "Executed white-box source code audits across Python (Django/FastAPI) and Node.js microservices.",
+      "Configured and managed DAST scans using OWASP ZAP and integrated security gates into GitLab CI pipelines.",
+      "Analyzed active network traffic and intrusion logs to assist SOC analysts during incident response drills."
+    ],
+    "technologies": ["Python", "OWASP ZAP", "Linux", "GitLab CI", "Wireshark", "Nmap"],
+    "achievements": [
+      "Reduced CI/CD security pipeline false-positives by 60% through custom Semgrep rule packs.",
+      "Author of 6 internal threat assessment advisories."
+    ],
+    "externalLink": ""
+  },
+  {
+    "id": "exp-3",
+    "position": "Security Research Intern",
+    "organization": "CloudSecure Labs",
+    "location": "Bengaluru, India",
+    "startDate": "2021-08",
+    "endDate": "2022-05",
+    "description": "Assisted in binary analysis, fuzzing research, and security vulnerability triage.",
+    "responsibilities": [
+      "Fuzzed network protocol implementations using AFL++ and custom Python harnesses.",
+      "Audited Active Directory configurations and privilege escalation paths in lab domain environments.",
+      "Maintained lab infrastructure and penetration testing virtual environments."
+    ],
+    "technologies": ["C", "Linux", "Active Directory", "Metasploit", "AFL++", "Python"],
+    "achievements": [
+      "Documented 3 local privilege escalation vectors in legacy Active Directory domain configurations."
+    ],
+    "externalLink": ""
+  }
+]

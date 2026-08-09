@@ -1,0 +1,188 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "settings"
+        label: "Site Settings"
+        file: "content/settings.json"
+        fields:
+          - { label: "Full Name", name: "name", widget: "string" }
+          - { label: "Page Title Prefix", name: "title", widget: "string" }
+          - { label: "Professional Role", name: "role", widget: "string" }
+          - { label: "Short Bio / Summary", name: "shortBio", widget: "text" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Contact Email", name: "email", widget: "string" }
+          - label: "Social Profiles"
+            name: "socials"
+            widget: "object"
+            fields:
+              - { label: "GitHub URL", name: "github", widget: "string", required: false }
+              - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+              - { label: "Bugcrowd URL", name: "bugcrowd", widget: "string", required: false }
+              - { label: "TryHackMe URL", name: "tryhackme", widget: "string", required: false }
+          - label: "SEO Settings"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Site Name", name: "siteName", widget: "string" }
+              - { label: "Default Description", name: "defaultDescription", widget: "text" }
+              - { label: "Site URL", name: "siteUrl", widget: "string" }
+
+  - name: "about"
+    label: "About Page"
+    files:
+      - name: "about"
+        label: "About Page"
+        file: "content/about.json"
+        fields:
+          - { label: "Main Heading", name: "heading", widget: "string" }
+          - label: "Bio Paragraphs"
+            name: "bioParagraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - { label: "Security Philosophy", name: "philosophy", widget: "text" }
+          - label: "Focus Areas"
+            name: "focusAreas"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Technologies & Tools"
+            name: "technologies"
+            widget: "list"
+            field: { label: "Technology", name: "technology", widget: "string" }
+
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Project Title", name: "title", widget: "string" }
+      - { label: "URL Slug", name: "slug", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Security Domain / Type", name: "securityType", widget: "string" }
+      - { label: "Date Published", name: "date", widget: "datetime", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD" }
+      - { label: "Featured Project", name: "featured", widget: "boolean", default: false }
+      - { label: "Short Description", name: "shortDescription", widget: "text" }
+      - label: "Technologies Used"
+        name: "technologies"
+        widget: "list"
+        field: { label: "Technology", name: "technology", widget: "string" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
+      - { label: "GitHub Repository URL", name: "githubUrl", widget: "string", required: false }
+      - { label: "Live Demo / Site URL", name: "liveDemoUrl", widget: "string", required: false }
+      - { label: "Documentation URL", name: "documentationUrl", widget: "string", required: false }
+      - { label: "Full Markdown Case Study", name: "body", widget: "markdown" }
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Post Title", name: "title", widget: "string" }
+      - { label: "URL Slug", name: "slug", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD" }
+      - { label: "Author Name", name: "author", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Reading Time", name: "readingTime", widget: "string" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
+      - { label: "Featured Article", name: "featured", widget: "boolean", default: false, required: false }
+      - { label: "Full Article Markdown Content", name: "body", widget: "markdown" }
+
+  - name: "experience"
+    label: "Work Experience"
+    files:
+      - name: "experience"
+        label: "Work Experience"
+        file: "content/experience.json"
+        fields:
+          - label: "Experience Entries"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Position / Title", name: "position", widget: "string" }
+              - { label: "Organization / Company", name: "organization", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Start Date", name: "startDate", widget: "string" }
+              - { label: "End Date", name: "endDate", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Key Responsibilities"
+                name: "responsibilities"
+                widget: "list"
+                field: { label: "Responsibility", name: "responsibility", widget: "text" }
+              - label: "Technologies Used"
+                name: "technologies"
+                widget: "list"
+                field: { label: "Technology", name: "technology", widget: "string" }
+              - label: "Key Achievements"
+                name: "achievements"
+                widget: "list"
+                field: { label: "Achievement", name: "achievement", widget: "text" }
+              - { label: "External Link", name: "externalLink", widget: "string", required: false }
+
+  - name: "education"
+    label: "Education"
+    files:
+      - name: "education"
+        label: "Education"
+        file: "content/education.json"
+        fields:
+          - label: "Education Entries"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Institution Name", name: "institution", widget: "string" }
+              - { label: "Degree Obtained", name: "degree", widget: "string" }
+              - { label: "Field of Study", name: "field", widget: "string" }
+              - { label: "Start Date", name: "startDate", widget: "string" }
+              - { label: "End Date", name: "endDate", widget: "string" }
+              - { label: "Summary Description", name: "description", widget: "text" }
+              - label: "Relevant Coursework"
+                name: "relevantCoursework"
+                widget: "list"
+                field: { label: "Coursework", name: "coursework", widget: "string" }
+              - label: "Key Achievements"
+                name: "achievements"
+                widget: "list"
+                field: { label: "Achievement", name: "achievement", widget: "text" }
+              - { label: "Institution Link", name: "link", widget: "string", required: false }
+
+  - name: "certificates"
+    label: "Certifications"
+    files:
+      - name: "certificates"
+        label: "Certifications"
+        file: "content/certificates.json"
+        fields:
+          - label: "Certificate Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Certification Name", name: "name", widget: "string" }
+              - { label: "Issuer / Organization", name: "issuer", widget: "string" }
+              - { label: "Issue Date", name: "issueDate", widget: "string" }
+              - { label: "Credential ID", name: "credentialId", widget: "string" }
+              - { label: "Verification URL", name: "credentialUrl", widget: "string" }
+              - { label: "Badge / Cert Image", name: "image", widget: "image" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Validated Skills"
+                name: "skills"
+                widget: "list"
+                field: { label: "Skill", name: "skill", widget: "string" }

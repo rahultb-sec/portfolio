@@ -1,0 +1,22 @@
+[
+  {
+    "id": "edu-1",
+    "institution": "National Institute of Technology",
+    "degree": "Bachelor of Technology (B.Tech)",
+    "field": "Computer Science and Engineering",
+    "startDate": "2018",
+    "endDate": "2022",
+    "description": "Graduated with First Class Honors. Focused on Computer Networks, Cryptography, Operating Systems, and Distributed Systems.",
+    "relevantCoursework": [
+      "Advanced Computer Networks & Cryptography",
+      "Operating System Design & Kernel Internals",
+      "Database Security & Distributed Systems",
+      "Analysis of Algorithms & Data Structures"
+    ],
+    "achievements": [
+      "Led the University Cyber Security Club and organized annual Capture The Flag (CTF) competitions with over 400 participants.",
+      "Published capstone research paper on automated mobile application traffic analysis."
+    ],
+    "link": "https://nit.example"
+  }
+]

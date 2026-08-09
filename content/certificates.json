@@ -1,0 +1,35 @@
+[
+  {
+    "id": "cert-1",
+    "name": "Offensive Security Certified Professional (OSCP)",
+    "issuer": "OffSec",
+    "issueDate": "2023-11",
+    "credentialId": "OS-1029384",
+    "credentialUrl": "https://www.credential.net/example-oscp",
+    "image": "/images/cert.png",
+    "description": "Hands-on penetration testing certification demonstrating mastery of information gathering, vulnerability identification, privilege escalation, and active exploit development.",
+    "skills": ["Penetration Testing", "Buffer Overflow", "Privilege Escalation", "Active Directory Exploitation", "Metasploit"]
+  },
+  {
+    "id": "cert-2",
+    "name": "Certified Red Team Operator (CRTO)",
+    "issuer": "Zero-Point Security",
+    "issueDate": "2024-04",
+    "credentialId": "CRTO-88912",
+    "credentialUrl": "https://www.credential.net/example-crto",
+    "image": "/images/cert11.png",
+    "description": "Specialized red teaming qualification focused on adversary simulation, Cobalt Strike operations, lateral movement, domain dominance, and defense evasion.",
+    "skills": ["Red Teaming", "Cobalt Strike", "Active Directory Dominance", "Evasion Techniques", "C2 Infrastructure"]
+  },
+  {
+    "id": "cert-3",
+    "name": "Certified Information Systems Security Professional (CISSP)",
+    "issuer": "(ISC)²",
+    "issueDate": "2024-08",
+    "credentialId": "CISSP-992301",
+    "credentialUrl": "https://www.isc2.org/credentials",
+    "image": "/images/cert.png",
+    "description": "Globally recognized cybersecurity certification validating expert capability to design, implement, and manage a best-in-class cybersecurity program.",
+    "skills": ["Security Architecture", "Risk Management", "Asset Security", "Identity & Access Management", "Security Operations"]
+  }
+]
