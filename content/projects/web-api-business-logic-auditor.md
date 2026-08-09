@@ -1,14 +1,21 @@
 ---
-title: "GraphQL & REST API Business Logic Security Auditor"
-slug: "web-api-business-logic-auditor"
-category: "Web Security"
-securityType: "Security Assessment"
-date: "2023-08-12"
+title: GraphQL & SOAP API Business Logic Security Auditor
+slug: web-api-business-logic-auditor
+category: Web Security
+securityType: Security Assessment
+date: 2023-08-12
 featured: false
-shortDescription: "A specialized Burp Suite extension written in Python to automatically test for IDOR, Broken Object Level Authorization (BOLA), and GraphQL introspection leaks."
-technologies: ["Burp Suite", "Python", "GraphQL", "REST API", "JSON Web Tokens (JWT)"]
-featuredImage: "/images/cert11.png"
-githubUrl: "https://github.com/rahulsecur/api-logic-auditor"
+shortDescription: A specialized Burp Suite extension written in Python to
+  automatically test for IDOR, Broken Object Level Authorization (BOLA), and
+  GraphQL introspection leaks.
+technologies:
+  - Burp Suite
+  - Python
+  - GraphQL
+  - REST API
+  - JSON Web Tokens (JWT)
+featuredImage: /images/cert11.png
+githubUrl: https://github.com/rahulsecur/api-logic-auditor
 liveDemoUrl: ""
 documentationUrl: ""
 ---
