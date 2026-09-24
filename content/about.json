@@ -1,28 +1,28 @@
 {
   "heading": "Security Through Precision & Deep Systems Analysis",
   "bioParagraphs": [
-    "I am a Cybersecurity Security Researcher with a focused background in identifying complex vulnerabilities across Web Applications, Android Ecosystems, and Distributed Infrastructure. My work centers on proactive defense, empirical penetration testing, and secure-by-design architecture.",
-    "Rather than treating security as a compliance checkbox, I operate with an adversarial mindset to uncover hidden business logic flaws, memory safety issues, and broken access controls before attackers can exploit them. I frequently contribute to bug bounty platforms and security research communities."
+    "I am an aspiring cybersecurity professional and security researcher exploring both offensive and defensive security, with hands-on interests in penetration testing, vulnerability research, security operations, and threat detection.",
+    "I like understanding how things work by taking them apart, testing them, and seeing where they break. Most of my learning comes from working on real projects, doing CTFs, experimenting with different security tools, and building my own labs. I’m always trying to learn something new and turn what I learn into something practical."
   ],
   "focusAreas": [
     {
       "title": "Penetration Testing & Offensive Security",
-      "description": "Black-box and white-box assessments of web endpoints, APIs, and cloud microservices using methodology-driven exploit techniques."
+      "description": "Hands-on experience with web application testing, network enumeration, vulnerability identification, and basic exploitation through labs, CTFs, and practical assessments."
     },
     {
       "title": "Web & Mobile (Android) Security",
-      "description": "Deep-dive static and dynamic binary analysis, dynamic instrumentation via Frida, SSL pinning bypass, and IPC mechanism auditing."
+      "description": "Exploring web and Android application security through static and dynamic analysis, Burp Suite, Frida, MobSF, and manual testing."
     },
     {
-      "title": "Vulnerability Research & Exploitation",
-      "description": "Uncovering zero-days and high-impact vulnerabilities in open-source applications, protocols, and proprietary business logic."
+      "title": "Active Directory & Network Security",
+      "description": "Building and testing Active Directory environments, working with Kerberos, SMB, privilege escalation, enumeration, and common AD attack techniques."
     },
     {
-      "title": "Security Engineering & Threat Mitigation",
-      "description": "Collaborating with engineering teams to integrate SAST/DAST automation, build secure authentication flows, and harden CI/CD pipelines."
+      "title": "SOC & Defensive Security",
+      "description": "Interested in security monitoring, SIEM, incident analysis, log investigation, and understanding how attacks can be detected and responded to."
     }
   ],
-  "philosophy": "Effective security relies on deep system understanding, minimal attack surfaces, and empirical evidence over theoretical risk.",
+  "philosophy": "Understand how a system works, find where it can fail, and learn how to make it more secure. I believe practical testing, curiosity, and continuous learning are key to good security.",
   "technologies": [
     "Linux",
     "Python",
