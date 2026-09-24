@@ -19,6 +19,26 @@ export function getJsonData<T>(filename: string): T {
   }
 }
 
+/**
+ * Safely normalizes date values parsed from frontmatter or JSON.
+ * gray-matter / js-yaml automatically parses unquoted YYYY-MM-DD or ISO date strings
+ * into JavaScript Date objects. This function ensures all dates returned to React components
+ * are normalized to serializable strings, preventing "Objects are not valid as a React child" build errors.
+ */
+export function normalizeDate(value: unknown): string {
+  if (value === null || value === undefined) {
+    return '';
+  }
+  if (value instanceof Date) {
+    if (isNaN(value.getTime())) {
+      return '';
+    }
+    const isoString = value.toISOString();
+    return isoString.endsWith('T00:00:00.000Z') ? isoString.split('T')[0] : isoString;
+  }
+  return String(value);
+}
+
 // Interfaces
 export interface SiteSettings {
   name: string;
@@ -161,7 +181,7 @@ export function getAllProjects(): ProjectData[] {
         slug: data.slug || fileName.replace(/\.md$/, ''),
         category: data.category || 'Security',
         securityType: data.securityType || 'Vulnerability Research',
-        date: data.date || '',
+        date: normalizeDate(data.date),
         featured: Boolean(data.featured),
         shortDescription: data.shortDescription || '',
         technologies: data.technologies || [],
@@ -202,7 +222,7 @@ export function getAllBlogPosts(): BlogPostData[] {
         title: data.title || '',
         slug: data.slug || fileName.replace(/\.md$/, ''),
         excerpt: data.excerpt || '',
-        date: data.date || '',
+        date: normalizeDate(data.date),
         author: data.author || 'Rahul',
         category: data.category || 'Cybersecurity',
         tags: data.tags || [],
