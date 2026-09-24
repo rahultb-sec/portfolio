@@ -1,20 +1,19 @@
 {
   "name": "Rahul T B",
-  "title": "Rahul T B — Cybersecurity Professional & Security Researcher",
-  "role": "Cybersecurity Engineer & Security Researcher",
-  "shortBio": "Specializing in Penetration Testing, Web & Android Application Security, Vulnerability Research, and Security Engineering with a proactive, threat-informed methodology.",
-  "location": "Bengaluru, India",
-  "email": "rahul.sec@example.com",
+  "title": "Rahul T B — Cybersecurity Researcher",
+  "role": "Aspiring Cybersecurity Professional",
+  "shortBio": "Cybersecurity student with hands-on experience in penetration testing, web and Android security, Active Directory, security labs, CTFs, and security automation. Also interested in defensive security and SOC operations, with a focus on learning through practical work.\n",
+  "location": "Ernakulam, Kerala, India",
+  "email": "rahultb.in@gmail.com",
   "socials": {
-    "github": "https://github.com/rahulsecur",
-    "linkedin": "https://linkedin.com/in/rahul-security",
-    "bugcrowd": "https://bugcrowd.com/rahul_sec",
-    "tryhackme": "https://tryhackme.com/p/rahul_sec"
+    "github": "https://github.com/rahultb-sec",
+    "linkedin": "https://linkedin.com/in/rahul-tb-43846a369/",
+    "bugcrowd": "https://bugcrowd.com/vnsxmke",
+    "tryhackme": "https://tryhackme.com/p/vxnsmke"
   },
   "seo": {
-    "siteName": "Rahul T B | Cybersecurity Engineer",
-    "defaultDescription": "Official portfolio of Rahul T B, a Cybersecurity Professional & Security Researcher focused on Web & Mobile App Sec, Penetration Testing, and Vulnerability Research.",
-    "siteUrl": "https://rahulsecur.com"
+    "siteName": "Rahul T B | Cybersecurity Researcher",
+    "defaultDescription": "Official portfolio of Rahul T B, an Aspiring Cybersecurity Professional & Security Researcher focused on Web & Mobile App Sec, Penetration Testing,  Vulnerability Research and deffensive security.",
+    "siteUrl": "https://rahultb.in"
   }
 }
-
